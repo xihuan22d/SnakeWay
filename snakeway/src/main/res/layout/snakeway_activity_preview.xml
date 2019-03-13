@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snakeway_darkColor_default">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/snakeway_activity_chooseimage_relativeLayoutTop_height">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/snakeway_view_normal_margin_narrow"
+            android:padding="@dimen/snakeway_imageView_button_normal_padding_narrow"
+            android:src="@mipmap/snakeway_activity_chooseimage_back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/snakeway_view_normal_margin_default"
+        android:layout_marginRight="@dimen/snakeway_view_normal_margin_default"
+        android:textColor="@color/snakeway_mainColorHelp_default"
+        android:textSize="@dimen/snakeway_textView_normal_textSize_default"
+        tools:text="1/2" />
+
+</RelativeLayout>
